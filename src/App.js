@@ -7,7 +7,7 @@ export default function App() {
   return (
     <View style={styles.container}>
       <Simples texto="Primeiro App em React!"/>
-      <ParImpar numero={11}/>
+      <ParImpar numero={10}/>
     </View>
   );
 }
