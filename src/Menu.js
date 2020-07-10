@@ -6,8 +6,13 @@ import ParImpar from './components/parimpar';
 import {Inverter, MegaSena} from './components/with';
 import Contador from './components/contador';
 import Plataformas from './components/plataformas';
+import ValidarProps from './components/validar-props';
 
+// O componente que estiver em primeiro, será exibido no menu.
 export default createDrawerNavigator({
+    ValidarProps: {
+        screen: () => <ValidarProps label="Vai: " ano={18}/>
+    },
     Plataformas: {
         screen: Plataformas
     },
