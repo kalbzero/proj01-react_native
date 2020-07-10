@@ -7,9 +7,13 @@ import {Inverter, MegaSena} from './components/with';
 import Contador from './components/contador';
 import Plataformas from './components/plataformas';
 import ValidarProps from './components/validar-props';
+import Eventos from './components/eventos';
 
 // O componente que estiver em primeiro, será exibido no menu.
 export default createDrawerNavigator({
+    Eventos: {
+        screen: Eventos
+    },
     ValidarProps: {
         screen: () => <ValidarProps label="Vai: " ano={18}/>
     },
